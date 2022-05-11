@@ -57,3 +57,28 @@ Ubuntu 20.04 下可以直接使用以下命令安装
 ```shell
 sudo apt install -y git clang-format
 ```
+
+## 使用
+
+- 生成中间代码
+
+```shell
+sysycc --emit-ir [file]
+```
+
+- 优化
+
+```shell
+# 开启所有优化
+sysycc --emit-ir --enable-all-opt [file]
+# 指定优化
+sysycc --emit-ir --opt [opt name] [file]
+# 例：
+sysycc --emit-ir --opt mem2reg --opt constant [file]
+```
+
+- 生成汇编
+
+```shell
+sysycc --emit-asm [file]
+```
