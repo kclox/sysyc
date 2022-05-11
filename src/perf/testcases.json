@@ -1,0 +1,27 @@
+[
+    {
+        "name": "bitset",
+        "files": [
+            "./testcases/official-testcases/2021_qual/performance/00_bitset3.sy",
+            "./testcases/official-testcases/2021_qual/performance/00_bitset1.sy",
+            "./testcases/official-testcases/2021_qual/performance/00_bitset2.sy"
+        ]
+    },
+    {
+        "name": "mm",
+        "files": [
+            "./testcases/official-testcases/2021_qual/performance/01_mm1.sy",
+            "./testcases/official-testcases/2021_qual/performance/01_mm2.sy",
+            "./testcases/official-testcases/2021_qual/performance/01_mm3.sy"
+        ]
+    },
+    {
+        "name": "mv",
+        "files": [
+            "./testcases/official-testcases/2021_qual/performance/02_mv1.sy",
+            "./testcases/official-testcases/2021_qual/performance/02_mv2.sy",
+            "./testcases/official-testcases/2021_qual/performance/02_mv3.sy"
+        ]
+    },
+    {"name": "mv"}
+]

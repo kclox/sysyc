@@ -1,0 +1,9 @@
+.vscode
+**/tmp
+build
+.build-coverage
+lcov.info
+a.out
+libsysy/libsysy.a
+*.o
+testcases/official-testcases
