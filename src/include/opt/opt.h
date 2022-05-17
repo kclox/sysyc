@@ -42,6 +42,9 @@ struct OptModule {
 extern const int module_count;
 extern OptModule modules[];
 
+extern const int level_count;
+extern std::vector<std::string> levels[];
+
 bool RunOpt(std::string name, ir::Module &m);
 } // namespace mgr
 
