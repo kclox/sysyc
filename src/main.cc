@@ -12,10 +12,12 @@ enum Option {
     AS = 0x100,
     LD,
     DBG,
+    OPT,
+    ENABLE_ALL_OPT,
 };
 
 int emit_ir = 0, use_clang = 0, list_opt = 0, enable_all_opt = 0, g_verbose = 0,
-    emit_asm = 0, disable_ra = 0, disable_backend = 0;
+    emit_asm = 0, disable_ra = 0, disable_backend = 0, opt_level = 0;
 static struct option long_options[] = {
     {"help", no_argument, nullptr, 'h'},
     {"func", required_argument, nullptr, 'f'},
@@ -24,17 +26,18 @@ static struct option long_options[] = {
     {"ir", required_argument, nullptr, 'i'},
     {"clang", no_argument, &use_clang, 1},
     {"lib-dir", required_argument, nullptr, 'L'},
-    {"opt", required_argument, nullptr, 'O'},
-    {"enable-all-opt", no_argument, &enable_all_opt, 1},
+    {"opt", required_argument, nullptr, OPT},
+    {"enable-all-opt", no_argument, &enable_all_opt, ENABLE_ALL_OPT},
     {"list-opt", no_argument, &list_opt, 1},
     {"verbose", no_argument, nullptr, 'v'},
     {"emit-asm", no_argument, &emit_asm, 1},
-    {"asm", required_argument, nullptr, 'a'},
+    {"asm", required_argument, nullptr, 'o'},
     {"as", required_argument, nullptr, AS},
     {"ld", required_argument, nullptr, LD},
     {"disable-ra", no_argument, &disable_ra, 1},
     {"disable-backend", no_argument, &disable_backend, 1},
     {"dbg", required_argument, nullptr, DBG},
+    {"opt-level", required_argument, nullptr, 'O'},
 };
 
 #define opt_count (sizeof(long_options) / sizeof(struct option))
@@ -64,6 +67,7 @@ void help() {
 
 int main(int argc, char *argv[]) {
     int opt;
+    bool has_custom_output = false;
     const char *out_file_name = "a.out";
     FILE *fout = nullptr, *fin = stdin;
     std::ofstream f_ir_out;
@@ -89,6 +93,7 @@ int main(int argc, char *argv[]) {
             break;
         case 'o': {
             out_file_name = strdup(optarg);
+            has_custom_output = true;
         } break;
         case 'f':
             func = optarg;
@@ -106,7 +111,7 @@ int main(int argc, char *argv[]) {
         case 'L': {
             lib_dir = strdup(optarg);
         } break;
-        case 'O': {
+        case OPT: {
             opts.push_back(std::string(strdup(optarg)));
         } break;
         case 'v': {
@@ -116,14 +121,6 @@ int main(int argc, char *argv[]) {
         case 'S': {
             emit_asm = 1;
         } break;
-        case 'a': {
-            f_asm_out.open(std::string(optarg));
-            if (!f_asm_out.is_open()) {
-                fprintf(stderr, "can not open %s for write\n", optarg);
-                return -1;
-            }
-            asm_out = &f_asm_out;
-        } break;
         case AS: {
             as = strdup(optarg);
         } break;
@@ -132,6 +129,22 @@ int main(int argc, char *argv[]) {
         } break;
         case DBG: {
             EnableDbg(std::string(strdup(optarg)));
+        } break;
+        case 'O': {
+            opt_level = atoi(optarg);
+            if (opt_level >= opt::mgr::level_count) {
+                fprintf(stderr, "invalid optimization level %d, must < %d\n",
+                        opt_level, opt::mgr::level_count);
+                exit(1);
+            }
+            auto &t = opt::mgr::levels[opt_level];
+            std::copy(t.begin(), t.end(), std::back_inserter(opts));
+        } break;
+        case ENABLE_ALL_OPT: {
+            enable_all_opt = true;
+            for (int i = 0; i < opt::mgr::module_count; i++) {
+                opts.push_back(opt::mgr::modules[i].name);
+            }
         } break;
         default:
             help();
@@ -143,12 +156,6 @@ int main(int argc, char *argv[]) {
             fprintf(stderr, "%s\n", opt::mgr::modules[i].name.c_str());
         }
         exit(0);
-    }
-
-    if (enable_all_opt) {
-        for (int i = 0; i < opt::mgr::module_count; i++) {
-            opts.push_back(opt::mgr::modules[i].name);
-        }
     }
 
     if (optind < argc) {
@@ -197,6 +204,10 @@ int main(int argc, char *argv[]) {
 
     backend::IrToAsm(*m, code, disable_ra);
     if (emit_asm) {
+        if (has_custom_output) {
+            f_asm_out.open(out_file_name);
+            asm_out = &f_asm_out;
+        }
         code.dump(*asm_out);
         goto _exit;
     }

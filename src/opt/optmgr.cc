@@ -17,6 +17,13 @@ OptModule modules[] = {
 };
 const int module_count = sizeof(modules) / sizeof(OptModule);
 
+std::vector<std::string> levels[] = {
+    {},
+    {"mem2reg", "constant-opt"},
+};
+const int level_count =
+    sizeof(levels) / sizeof(std::vector<std::string>);
+
 OptModule::OptModule(std::string name, OptModuleEntry entry,
                      std::vector<OptModuleEntry> dependencies)
     : name(name), entry(entry) {
