@@ -27,7 +27,7 @@ static struct option long_options[] = {
     {"clang", no_argument, &use_clang, 1},
     {"lib-dir", required_argument, nullptr, 'L'},
     {"opt", required_argument, nullptr, OPT},
-    {"enable-all-opt", no_argument, &enable_all_opt, ENABLE_ALL_OPT},
+    {"enable-all-opt", no_argument, nullptr, ENABLE_ALL_OPT},
     {"list-opt", no_argument, &list_opt, 1},
     {"verbose", no_argument, nullptr, 'v'},
     {"emit-asm", no_argument, &emit_asm, 1},
