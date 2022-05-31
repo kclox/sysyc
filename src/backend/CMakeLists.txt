@@ -1,8 +1,11 @@
 
 add_library(backend 
-  backend.cc
-  instr_select.cc
-  reg_alloca.cc
+backend.cc
+arm_basic.cc
+arm_func.cc
+builder.cc
+instr_select.cc
+reg_alloca.cc
 )
 target_link_libraries(backend dbg)
 
