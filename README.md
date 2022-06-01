@@ -103,5 +103,6 @@ qemu-arm ./asm32
 qemu-arm -L /usr/arm-linux-gnueabihf -g 1234 ./xxxx  // 1234为远程端口
 gdb-multiarch -q --nh -ex 'set architecture arm' -ex 'file xxxx' -ex 'target remote localhost:1234' -ex 'layout split' -ex 'layout regs'
 
+
 ```
 
