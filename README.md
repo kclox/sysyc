@@ -92,18 +92,16 @@ cmake -DCMAKE_BUILD_TYPE=Debug ..
 - 在虚拟机下执行 ARM
 ```
 all:
-	arm-linux-gnueabihf-as 3.s -g -o 3.o
-	arm-linux-gnueabihf-gcc 3.o  -static libsysy-arm/lib/libsysy.a -o 3
+	arm-linux-gnueabihf-as xxx.s -g -o xxxx.o
+	arm-linux-gnueabihf-gcc xxxx.o  -static libsysy-arm/lib/libsysy.a -o xxxx
 
 qemu-arm ./asm32
 ```
 
 - 在虚拟机下调试 ARM
 ```
-qemu-arm -L /usr/arm-linux-gnueabihf -g 1234 ./hello32-static  // 1234为远程端口
-gdb-multiarch -q --nh -ex 'set architecture arm' -ex 'file 3' -ex 'target remote localhost:1234' -ex 'layout split' -ex 'layout regs'
+qemu-arm -L /usr/arm-linux-gnueabihf -g 1234 ./xxxx  // 1234为远程端口
+gdb-multiarch -q --nh -ex 'set architecture arm' -ex 'file xxxx' -ex 'target remote localhost:1234' -ex 'layout split' -ex 'layout regs'
 
 ```
 
-./sysycc --emit-asm 3.sy > 3.s ; make ; qemu-arm ./3 ;echo $?
-执行中间代码：llvm-as tmp.ll ;  lli tmp.bc

@@ -1,14 +1,14 @@
 #include "backend.h"
 #include <stdarg.h>
 
-namespace backend
-{
-namespace builder
-{
-void Load(instr_list &insts, instr_iter it, Reg rd, Address addr) {
+namespace backend {
+namespace builder {
+void Load(instr_list &insts, instr_iter it, Reg rd, Address addr,
+          bool eq_addr) {
     auto ldr = std::make_unique<LDR>();
     ldr->rd = rd;
     ldr->addr = addr;
+    ldr->eq_addr = eq_addr;
     insts.insert(it, std::move(ldr));
 }
 
@@ -133,11 +133,11 @@ Reg Op2Reg(Func &func, instr_list &insts, instr_iter it, Operand op, Reg rd) {
     if (op.flags & op.kIsImm) {
         if (rd == Reg::INVALID)
             rd = func.AllocaVReg();
-        int nbit = NBit(op.imm);   // 检查是否能通过mov直接得到立即数
+        int nbit = NBit(op.imm); // 检查是否能通过mov直接得到立即数
         if (nbit <= 16) {
             builder::Move(insts, it, rd, op.imm);
-            return rd; 
-        } else {    // 使用load获取立即数
+            return rd;
+        } else { // 使用load获取立即数
             auto label = func.CreateIntImm(op.imm);
             builder::Load(insts, it, rd, Address(label));
             // Load(insts, it, rd, rd);
@@ -208,9 +208,6 @@ void Move(Func &func, instr_list &insts, instr_iter it, Operand rd,
 
 } // namespace adv
 
-
-
-
-}// namespace builder
+} // namespace builder
 
 } // namespace backend

@@ -1,10 +1,9 @@
 #include "backend.h"
 #include <stdarg.h>
 
-
 namespace backend {
 
-std::string Reg2Str(Reg r)   {
+std::string Reg2Str(Reg r) {
     static std::string m[]{
         "R0", "R1",  "R2", "R3",  "R4",  "R5", "R6", "R7", "R8",
         "R9", "R10", "FP", "R12", "R13", "SP", "LR", "PC",
@@ -26,30 +25,29 @@ std::string RegImmU2Str(RegImmU x, int flags) {
 // Cond
 std::string Cond::str() const {
     static std::string m[]{"EQ", "NE", "HI", "HS", "LS", "LO",
-                               "GT", "GE", "LT", "LE", ""};
+                           "GT", "GE", "LT", "LE", ""};
     return m[type];
 }
 Cond Cond::Not() {
     static std::map<int, int> m{
-            {EQ, NE}, {NE, EQ}, {HI, LS}, {HS, LO}, {LO, HS},
-            {LS, HI}, {GT, LE}, {GE, LT}, {LT, GE}, {LE, GT},
+        {EQ, NE}, {NE, EQ}, {HI, LS}, {HS, LO}, {LO, HS},
+        {LS, HI}, {GT, LE}, {GE, LT}, {LT, GE}, {LE, GT},
     };
     return Cond(m[type]);
 }
 
 // Shift
-std::string Shift :: str() const {
+std::string Shift ::str() const {
     static std::string m[]{"LSL"};
     return m[type] + " #" + std::to_string(imm);
 }
-
 
 // Address
 std::string Address::str() const {
     std::string s_offset;
 
     switch (mode & mode_m_mask) {
-    case kMBase:   
+    case kMBase:
         return "[" + Reg2Str(base) + "]";
     case kMBaseImm:
         s_offset += "#" + std::to_string(offset.imm);
@@ -90,12 +88,52 @@ std::vector<Reg *> Address::RRegs() {
 }
 
 // Define
-std::string Define::str()
-{
-    std::string s = name + ":\n";
-    s += init->str_arm();
+
+std::string getvalString(std::shared_ptr<ir::InitVal> init) {
+    std::string s = "";
+    switch (init->kind) {
+    case ir::InitVal::kZero: {
+        auto p0 = std::dynamic_pointer_cast<ir::Zeroinitializer>(init);
+        auto ty = p0->ty;
+        int count = 1;
+        if (ty->kind == ir::Type::kArray) {
+            auto karray = std::dynamic_pointer_cast<ir::ArrayT>(ty);
+            count = karray->count;
+        }
+        for (int i = 0; i < count; i++) {
+            s = s + ".word 0";
+            if (i < count - 1)
+                s = s + "\n";
+        }
+        break;
+    }
+
+    case ir::InitVal::kBasic: {
+        auto p1 = std::dynamic_pointer_cast<ir::BasicInit>(init);
+        s = s + ".word " + p1->val->str();
+        break;
+    }
+    case ir::InitVal::kArray: {
+        auto p2 = std::dynamic_pointer_cast<ir::ArrayInit>(init);
+        if (p2->vals.size() > 0) {
+            for (int i = 0; i < p2->vals.size(); i++) {
+                std::shared_ptr<ir::InitVal> k(p2->vals[i].get());
+                s += getvalString(k) + "\n";
+                if (i < p2->vals.size() - 1)
+                    s = s + "\n";
+            }
+        }
+    }
+    default:
+        break;
+    }
     return s;
 }
 
+std::string Define::str() {
 
-};
+    std::string s = name + ":\n";
+    s += getvalString(init);
+    return s;
+}
+}; // namespace backend
