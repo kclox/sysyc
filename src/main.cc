@@ -202,7 +202,7 @@ int main(int argc, char *argv[]) {
         goto _exit;
     }
 
-    backend::IrToAsm(*m, code, disable_ra);
+    backend::IrToAsm(*m, code, disable_ra, emit_asm);
     if (emit_asm) {
         if (has_custom_output) {
             f_asm_out.open(out_file_name);
