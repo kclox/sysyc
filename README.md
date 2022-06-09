@@ -82,3 +82,27 @@ sysycc --emit-ir --opt mem2reg --opt constant [file]
 ```shell
 sysycc --emit-asm [file]
 ```
+
+
+-- debug
+```
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+```
+
+- 在虚拟机下执行 ARM
+```
+all:
+	arm-linux-gnueabihf-as xxx.s -g -o xxxx.o
+	arm-linux-gnueabihf-gcc xxxx.o  -static libsysy-arm/lib/libsysy.a -o xxxx
+
+qemu-arm ./asm32
+```
+
+- 在虚拟机下调试 ARM
+```
+qemu-arm -L /usr/arm-linux-gnueabihf -g 1234 ./xxxx  // 1234为远程端口
+gdb-multiarch -q --nh -ex 'set architecture arm' -ex 'file xxxx' -ex 'target remote localhost:1234' -ex 'layout split' -ex 'layout regs'
+
+
+```
+

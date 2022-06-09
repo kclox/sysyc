@@ -15,6 +15,7 @@ struct InitVal {
     int kind;
     InitVal(int kind) : kind(kind) {}
     virtual std::string str() const = 0;
+
     virtual std::shared_ptr<Type> type() = 0;
     virtual bool IsType(const Type &ty) const = 0;
 };
