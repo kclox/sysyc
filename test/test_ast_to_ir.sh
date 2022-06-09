@@ -7,6 +7,15 @@ source test/comm.sh
 sysycc=build/src/sysycc
 testcase_dir="testcases/ast_to_ir"
 
+#将失败用例的记录存放起来
+#该测试脚本似乎还不完善
+save_dir=testlogs/test_ast_to_ir
+mkdir -p $save_dir
+time=$(date "+%Y%m%d-%H%M%S")
+touch "${save_dir}/${time}.log"
+echo "the running time is ${time}" 
+
+
 if [ ! -f $DRIVER ];
 then
     echo $DRIVER not found, please build it

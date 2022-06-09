@@ -1,0 +1,1804 @@
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/57_sort_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/57_sort_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/52_recursion_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/52_recursion_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/05_const_array_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/05_const_array_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/00_arr_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/00_arr_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/06_mod.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/06_mod.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/30_while_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/30_while_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/69_last_word_length.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/69_last_word_length.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/72_enum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/72_enum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/05_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/05_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/21_suminput.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/21_suminput.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/58_sort_test6.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/58_sort_test6.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/33_func_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/33_func_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/54_sort_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/54_sort_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/86_bin_search.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/86_bin_search.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/63_simple_atoi.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/63_simple_atoi.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/79_gcd.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/79_gcd.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/13_and.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/13_and.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/49_decl_in_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/49_decl_in_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/03_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/03_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/09_if.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/09_if.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/66_go_upstairs.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/66_go_upstairs.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/88_array_concat.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/88_array_concat.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/35_array_test.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/35_array_test.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/25_if_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/25_if_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/11_while.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/11_while.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/10_if_else.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/10_if_else.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/00_main.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/00_main.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/38_if_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/38_if_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/10_break.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/10_break.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/45_equal_prior_logic.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/45_equal_prior_logic.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/81_jump_game.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/81_jump_game.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/74_itera_sqrt.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/74_itera_sqrt.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/76_int_factor_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/76_int_factor_sum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/91_line_search.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/91_line_search.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/42_index_func_ret.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/42_index_func_ret.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/78_decbinoct.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/78_decbinoct.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/53_sort_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/53_sort_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/15_array_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/15_array_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/46_and_prior_or.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/46_and_prior_or.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/17_less.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/17_less.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/12_array_traverse.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/12_array_traverse.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/62_long_code.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/62_long_code.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/92_matrix_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/92_matrix_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/59_sort_test7.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/59_sort_test7.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/04_const_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/04_const_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/50_recursion_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/50_recursion_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/51_recursion_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/51_recursion_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/07_return_var.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/07_return_var.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/43_time_prior_plus.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/43_time_prior_plus.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/84_palindrome_number.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/84_palindrome_number.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/56_sort_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/56_sort_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/18_cal_prio.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/18_cal_prio.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/41_index_arithmetic_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/41_index_arithmetic_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/83_enc_dec.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/83_enc_dec.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/75_max_container.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/75_max_container.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/15_equal.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/15_equal.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/24_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/24_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/44_add_prior_equal.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/44_add_prior_equal.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/96_many_param_call.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/96_many_param_call.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/70_multi.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/70_multi.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/11_continue.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/11_continue.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/65_word_count.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/65_word_count.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/17_less_eq.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/17_less_eq.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/80_lcm.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/80_lcm.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/36_domain_test.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/36_domain_test.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/29_while_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/29_while_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/40_index_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/40_index_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/99_register_realloc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/99_register_realloc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/93_matrix_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/93_matrix_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/22_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/22_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/16_nequal.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/16_nequal.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/09_void_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/09_void_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/26_if_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/26_if_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/67_remove_duplicate_element.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/67_remove_duplicate_element.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/39_assign_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/39_assign_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/02_arr_defn4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/02_arr_defn4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/13_array_traverse2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/13_array_traverse2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/71_max_subsequence_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/71_max_subsequence_sum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/64_alpha_count.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/64_alpha_count.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/98_many_local_var.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/98_many_local_var.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/12_getint.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/12_getint.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/32_while_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/32_while_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/55_sort_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/55_sort_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/04_func_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/04_func_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/28_while_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/28_while_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/07_comment1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/07_comment1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/19_neg_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/19_neg_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/82_int_split.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/82_int_split.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/03_arr_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/03_arr_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/02_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/02_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/08_arr_assign.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/08_arr_assign.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/27_while_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/27_while_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/08_comment2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/08_comment2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/06_var_defn_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/06_var_defn_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/16_greater_eq.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/16_greater_eq.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/31_while_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/31_while_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/77_unique_path.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/77_unique_path.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/14_or.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/14_or.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/94_matrix_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/94_matrix_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/23_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/23_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/01_var_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/01_var_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/90_insert_order.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/90_insert_order.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/60_while_fibonacci.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/60_while_fibonacci.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/97_many_global_var.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/97_many_global_var.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/20_arr_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/20_arr_sum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/73_exchange_value.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/73_exchange_value.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/61_rec_fibonacci.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/61_rec_fibonacci.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/34_func_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/34_func_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/47_minus_with_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/47_minus_with_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2020/95_matrix_tran.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2020/95_matrix_tran.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/114_register_alloc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/114_register_alloc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/095_empty_stmt.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/095_empty_stmt.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/083_brainfk.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/083_brainfk.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/117_nested_loops.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/117_nested_loops.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/113_many_locals2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/113_many_locals2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/084_expr_eval.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/084_expr_eval.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/096_side_effect.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/096_side_effect.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/105_long_array2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/105_long_array2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/109_many_params2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/109_many_params2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/116_nested_calls2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/116_nested_calls2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/082_reverse_output.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/082_reverse_output.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/099_skip_spaces.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/099_skip_spaces.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/103_long_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/103_long_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/111_many_globals.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/111_many_globals.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/092_max_flow.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/092_max_flow.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/090_int_io.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/090_int_io.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/106_long_code.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/106_long_code.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/091_kmp.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/091_kmp.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/107_long_code2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/107_long_code2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/115_nested_calls.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/115_nested_calls.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/089_hidden_var.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/089_hidden_var.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/104_long_array.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/104_long_array.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/100_int_literal.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/100_int_literal.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/094_substr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/094_substr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/098_chaos_token.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/098_chaos_token.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/088_hanoi.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/088_hanoi.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/093_n_queens.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/093_n_queens.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/081_exgcd.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/081_exgcd.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/097_var_name.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/097_var_name.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/085_dijkstra.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/085_dijkstra.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/110_many_params3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/110_many_params3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/087_gcd.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/087_gcd.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/086_full_conn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/086_full_conn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/101_scope2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/101_scope2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/112_many_locals.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/112_many_locals.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/102_short_circuit3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/102_short_circuit3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/h_functional/108_many_params.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/108_many_params.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/049_unary_op.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/049_unary_op.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/033_while_if.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/033_while_if.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/028_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/028_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/012_func_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/012_func_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/036_while_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/036_while_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/062_sort_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/062_sort_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/010_const_var_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/010_const_var_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/072_percolation.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/072_percolation.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/079_calculator.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/079_calculator.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1075_max_container.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1075_max_container.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/073_backpack.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/073_backpack.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/029_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/029_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1082_int_split.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1082_int_split.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/002_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/002_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/057_if_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/057_if_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1070_multi.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1070_multi.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/065_sort_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/065_sort_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/027_if2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/027_if2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/077_matrix_tran.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/077_matrix_tran.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/037_break.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/037_break.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/013_var_defn_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/013_var_defn_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/051_logi_assign.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/051_logi_assign.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1072_enum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1072_enum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/021_mulc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/021_mulc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1081_jump_game.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1081_jump_game.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/038_continue.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/038_continue.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/018_sub2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/018_sub2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/009_const_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/009_const_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/076_matrix_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/076_matrix_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/074_matrix_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/074_matrix_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/078_big_int_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/078_big_int_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/063_sort_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/063_sort_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/040_while_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/040_while_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/044_op_priority2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/044_op_priority2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/026_if.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/026_if.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/015_add2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/015_add2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/031_if_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/031_if_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/064_sort_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/064_sort_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/011_const_array_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/011_const_array_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/039_while_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/039_while_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/061_sort_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/061_sort_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/060_scope.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/060_scope.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/045_op_priority3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/045_op_priority3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/046_op_priority4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/046_op_priority4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1073_exchange_value.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1073_exchange_value.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/024_mod.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/024_mod.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/020_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/020_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/030_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/030_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/017_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/017_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/014_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/014_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1086_bin_search.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1086_bin_search.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/023_divc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/023_divc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1080_lcm.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1080_lcm.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1067_remove_duplicate_element.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1067_remove_duplicate_element.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/054_hex_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/054_hex_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/019_subc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/019_subc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1084_palindrome_number.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1084_palindrome_number.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1077_unique_path.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1077_unique_path.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1078_decbinoct.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1078_decbinoct.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1090_insert_order.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1090_insert_order.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/025_rem.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/025_rem.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/059_short_circuit2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/059_short_circuit2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/001_var_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/001_var_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/070_multiplication_puzzle.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/070_multiplication_puzzle.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/035_while_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/035_while_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/048_stmt_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/048_stmt_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/071_exchange_array.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/071_exchange_array.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1091_line_search.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1091_line_search.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/058_short_circuit.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/058_short_circuit.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/041_while_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/041_while_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1088_array_concat.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1088_array_concat.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1074_itera_sqrt.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1074_itera_sqrt.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/068_genealogical_tree.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/068_genealogical_tree.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1069_last_word_length.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1069_last_word_length.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/043_op_priority1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/043_op_priority1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/067_sort_test7.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/067_sort_test7.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/004_arr_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/004_arr_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/066_sort_test6.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/066_sort_test6.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/042_arr_expr_len.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/042_arr_expr_len.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/016_addc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/016_addc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1066_go_upstairs.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1066_go_upstairs.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/053_comment2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/053_comment2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/075_matrix_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/075_matrix_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/056_assign_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/056_assign_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/050_unary_op2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/050_unary_op2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/055_hex_oct_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/055_hex_oct_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/032_if_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/032_if_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/008_const_var_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/008_const_var_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/052_comment1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/052_comment1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/022_div.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/022_div.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/069_greatest_common_divisor.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/069_greatest_common_divisor.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/005_arr_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/005_arr_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/006_arr_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/006_arr_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1071_max_subsequence_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1071_max_subsequence_sum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/047_op_priority5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/047_op_priority5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/034_while_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/034_while_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1076_int_factor_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1076_int_factor_sum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/000_main.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/000_main.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/080_color.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/080_color.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/003_var_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/003_var_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/007_arr_defn4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/007_arr_defn4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/2021_qual/functional/1083_enc_dec.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/1083_enc_dec.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/80_chaos_token.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/80_chaos_token.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/47_hex_oct_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/47_hex_oct_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/10_var_defn_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/10_var_defn_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/29_break.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/29_break.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/85_long_code.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/85_long_code.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/83_long_array.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/83_long_array.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/14_subc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/14_subc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/71_full_conn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/71_full_conn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/51_short_circuit3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/51_short_circuit3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/16_mulc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/16_mulc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/08_const_array_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/08_const_array_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/59_sort_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/59_sort_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/96_matrix_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/96_matrix_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/01_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/01_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/93_nested_calls.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/93_nested_calls.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/76_n_queens.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/76_n_queens.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/84_long_array2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/84_long_array2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/72_hanoi.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/72_hanoi.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/74_kmp.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/74_kmp.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/11_add2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/11_add2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/99_matrix_tran.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/99_matrix_tran.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/52_scope.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/52_scope.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/67_reverse_output.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/67_reverse_output.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/00_main.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/00_main.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/86_long_code2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/86_long_code2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/48_assign_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/48_assign_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/07_const_var_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/07_const_var_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/27_while_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/27_while_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/26_while_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/26_while_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/82_long_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/82_long_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/39_op_priority5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/39_op_priority5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/19_mod.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/19_mod.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/98_matrix_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/98_matrix_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/05_arr_defn4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/05_arr_defn4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/30_continue.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/30_continue.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/46_hex_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/46_hex_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/23_if_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/23_if_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/20_rem.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/20_rem.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/37_op_priority3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/37_op_priority3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/58_sort_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/58_sort_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/87_many_params.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/87_many_params.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/25_while_if.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/25_while_if.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/91_many_locals2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/91_many_locals2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/88_many_params2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/88_many_params2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/66_exgcd.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/66_exgcd.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/81_skip_spaces.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/81_skip_spaces.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/21_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/21_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/12_addc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/12_addc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/28_while_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/28_while_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/38_op_priority4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/38_op_priority4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/35_op_priority1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/35_op_priority1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/69_expr_eval.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/69_expr_eval.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/60_sort_test6.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/60_sort_test6.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/97_matrix_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/97_matrix_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/92_register_alloc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/92_register_alloc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/04_arr_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/04_arr_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/63_big_int_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/63_big_int_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/70_dijkstra.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/70_dijkstra.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/44_stmt_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/44_stmt_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/64_calculator.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/64_calculator.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/78_side_effect.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/78_side_effect.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/73_int_io.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/73_int_io.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/22_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/22_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/57_sort_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/57_sort_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/95_float.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/95_float.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/18_divc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/18_divc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/54_hidden_var.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/54_hidden_var.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/49_if_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/49_if_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/40_unary_op.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/40_unary_op.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/45_comment1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/45_comment1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/79_var_name.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/79_var_name.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/89_many_globals.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/89_many_globals.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/02_var_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/02_var_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/65_color.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/65_color.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/50_short_circuit.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/50_short_circuit.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/62_percolation.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/62_percolation.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/41_unary_op2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/41_unary_op2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/53_scope2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/53_scope2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/68_brainfk.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/68_brainfk.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/55_sort_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/55_sort_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/77_substr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/77_substr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/90_many_locals.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/90_many_locals.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/42_empty_stmt.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/42_empty_stmt.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/15_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/15_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/32_while_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/32_while_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/43_logi_assign.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/43_logi_assign.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/03_arr_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/03_arr_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/61_sort_test7.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/61_sort_test7.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/34_arr_expr_len.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/34_arr_expr_len.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/75_max_flow.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/75_max_flow.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/24_if_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/24_if_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/56_sort_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/56_sort_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/94_nested_loops.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/94_nested_loops.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/31_while_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/31_while_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/06_const_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/06_const_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/09_func_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/09_func_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/17_div.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/17_div.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/13_sub2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/13_sub2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/33_while_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/33_while_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2022/36_op_priority2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2022/36_op_priority2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/049_unary_op.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/049_unary_op.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/033_while_if.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/033_while_if.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/028_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/028_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/012_func_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/012_func_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/036_while_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/036_while_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/062_sort_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/062_sort_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/010_const_var_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/010_const_var_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/93_decbinoct.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/93_decbinoct.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/072_percolation.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/072_percolation.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/079_calculator.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/079_calculator.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/073_backpack.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/073_backpack.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/029_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/029_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/002_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/002_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/057_if_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/057_if_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/065_sort_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/065_sort_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/027_if2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/027_if2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/077_matrix_tran.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/077_matrix_tran.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/037_break.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/037_break.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/013_var_defn_func.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/013_var_defn_func.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/051_logi_assign.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/051_logi_assign.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/82_remove_duplicate_element.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/82_remove_duplicate_element.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/021_mulc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/021_mulc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/101_insert_order.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/101_insert_order.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/038_continue.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/038_continue.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/018_sub2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/018_sub2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/009_const_var_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/009_const_var_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/076_matrix_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/076_matrix_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/074_matrix_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/074_matrix_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/078_big_int_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/078_big_int_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/98_palindrome_number.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/98_palindrome_number.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/063_sort_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/063_sort_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/040_while_if_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/040_while_if_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/044_op_priority2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/044_op_priority2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/026_if.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/026_if.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/015_add2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/015_add2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/031_if_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/031_if_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/064_sort_test4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/064_sort_test4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/011_const_array_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/011_const_array_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/039_while_if_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/039_while_if_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/061_sort_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/061_sort_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/060_scope.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/060_scope.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/045_op_priority3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/045_op_priority3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/046_op_priority4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/046_op_priority4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/024_mod.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/024_mod.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/020_mul.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/020_mul.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/030_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/030_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/87_enum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/87_enum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/017_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/017_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/014_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/014_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/023_divc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/023_divc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/90_max_container.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/90_max_container.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/86_max_subsequence_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/86_max_subsequence_sum.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/95_jump_game.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/95_jump_game.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/054_hex_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/054_hex_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/019_subc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/019_subc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/88_exchange_value.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/88_exchange_value.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/100_array_concat.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/100_array_concat.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/85_multi.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/85_multi.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/025_rem.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/025_rem.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/94_lcm.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/94_lcm.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/059_short_circuit2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/059_short_circuit2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/001_var_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/001_var_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/070_multiplication_puzzle.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/070_multiplication_puzzle.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/035_while_test2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/035_while_test2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/81_go_upstairs.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/81_go_upstairs.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/048_stmt_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/048_stmt_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/97_enc_dec.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/97_enc_dec.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/102_line_search.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/102_line_search.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/96_int_split.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/96_int_split.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/92_unique_path.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/92_unique_path.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/071_exchange_array.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/071_exchange_array.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/058_short_circuit.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/058_short_circuit.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/041_while_if_test3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/041_while_if_test3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/89_itera_sqrt.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/89_itera_sqrt.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/068_genealogical_tree.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/068_genealogical_tree.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/84_last_word_length.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/84_last_word_length.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/043_op_priority1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/043_op_priority1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/067_sort_test7.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/067_sort_test7.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/004_arr_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/004_arr_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/066_sort_test6.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/066_sort_test6.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/042_arr_expr_len.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/042_arr_expr_len.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/016_addc.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/016_addc.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/053_comment2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/053_comment2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/075_matrix_sub.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/075_matrix_sub.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/056_assign_complex_expr.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/056_assign_complex_expr.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/050_unary_op2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/050_unary_op2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/055_hex_oct_add.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/055_hex_oct_add.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/032_if_test5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/032_if_test5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/008_const_var_defn.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/008_const_var_defn.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/052_comment1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/052_comment1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/022_div.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/022_div.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/069_greatest_common_divisor.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/069_greatest_common_divisor.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/005_arr_defn2.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/005_arr_defn2.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/006_arr_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/006_arr_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/047_op_priority5.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/047_op_priority5.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/034_while_test1.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/034_while_test1.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/000_main.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/000_main.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/080_color.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/080_color.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/003_var_defn3.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/003_var_defn3.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/99_bin_search.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/99_bin_search.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/007_arr_defn4.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/007_arr_defn4.sy
+
+
+fail: diff -B -b --color=always /tmp/tmp.res testcases/official-testcases/function_test2021/91_int_factor_sum.out
+compile: build/src/sysycc --ld 'arm-linux-gnueabi-gcc -m32 -static' -L libsysy-arm/lib -o /tmp/tmp.out testcases/official-testcases/function_test2021/91_int_factor_sum.sy
+
+

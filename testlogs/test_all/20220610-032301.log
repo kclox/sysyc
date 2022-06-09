@@ -1,0 +1,491 @@
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2020/02_arr_defn4.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-d4b303.o: in function `main':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x83): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/084_expr_eval.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-785505.o: in function `eval':
+1804289383.ll:(.text+0x318): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x33a): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/105_long_array2.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-89d92d.o: in function `main':
+1804289383.ll:(.text+0x77): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xdb): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/109_many_params2.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-3db666.o: in function `main':
+1804289383.ll:(.text+0x12b): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x14d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/089_hidden_var.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-587aec.o: in function `main':
+1804289383.ll:(.text+0xe8): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x14e): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/094_substr.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-67577a.o: in function `max_sum_nonadjacent':
+1804289383.ll:(.text+0x6a): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-67577a.o: in function `longest_common_subseq':
+1804289383.ll:(.text+0x152): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-67577a.o: in function `main':
+1804289383.ll:(.text+0x2b4): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x363): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/081_exgcd.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-dc2420.o: in function `main':
+1804289383.ll:(.text+0xf2): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x11c): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/097_var_name.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-8691af.o: in function `main':
+1804289383.ll:(.text+0x31): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/112_many_locals.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-500420.o: in function `foo':
+1804289383.ll:(.text+0x24): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/108_many_params.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-4acc4d.o: in function `param16':
+1804289383.ll:(.text+0xafd): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-4acc4d.o: in function `main':
+1804289383.ll:(.text+0xf0e): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/073_backpack.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-9713db.o: in function `main':
+1804289383.ll:(.text+0x233): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x285): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/078_big_int_mul.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-d696a8.o: in function `main':
+1804289383.ll:(.text+0x28): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x129): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x241): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/071_exchange_array.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-14d1a9.o: in function `main':
+1804289383.ll:(.text+0x26): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/006_arr_defn3.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-509bee.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x4c): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xc6): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x131): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x183): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/007_arr_defn4.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-a356ff.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x8e): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xb0): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x118): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x16d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/03_sort1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/00_bitset3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/02_mv3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/04_spmv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/02_mv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/00_bitset1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/02_mv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/01_mm1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/01_mm2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/04_spmv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/01_mm3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/04_spmv3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/03_sort3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/03_sort2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/performance/00_bitset2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/96_matrix_add.sy
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/84_long_array2.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-970c18.o: in function `main':
+1804289383.ll:(.text+0x77): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xdb): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/99_matrix_tran.sy
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/98_matrix_mul.sy
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/05_arr_defn4.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-997a1d.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x8e): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xb0): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x118): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x16d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/87_many_params.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-029f50.o: in function `param16':
+1804289383.ll:(.text+0xafd): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-029f50.o: in function `main':
+1804289383.ll:(.text+0xf0e): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/88_many_params2.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-c4f992.o: in function `main':
+1804289383.ll:(.text+0x12b): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x14d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/66_exgcd.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-f2c0c9.o: in function `main':
+1804289383.ll:(.text+0xf2): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x11c): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/69_expr_eval.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-01c775.o: in function `eval':
+1804289383.ll:(.text+0x318): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x33a): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/97_matrix_sub.sy
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/04_arr_defn3.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-3200f0.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x4c): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xc6): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x131): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x183): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/63_big_int_mul.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-c57769.o: in function `main':
+1804289383.ll:(.text+0x28): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x129): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x241): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/95_float.sy
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/54_hidden_var.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-b8e5a5.o: in function `main':
+1804289383.ll:(.text+0xe8): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x14e): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/79_var_name.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-f4499e.o: in function `main':
+1804289383.ll:(.text+0x31): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/77_substr.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-00c5c9.o: in function `max_sum_nonadjacent':
+1804289383.ll:(.text+0x6a): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-00c5c9.o: in function `longest_common_subseq':
+1804289383.ll:(.text+0x152): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-00c5c9.o: in function `main':
+1804289383.ll:(.text+0x2b4): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x363): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/90_many_locals.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-bd1033.o: in function `foo':
+1804289383.ll:(.text+0x24): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/073_backpack.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-e84d14.o: in function `main':
+1804289383.ll:(.text+0x233): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x285): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/078_big_int_mul.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-c9c79b.o: in function `main':
+1804289383.ll:(.text+0x28): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x129): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x241): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/071_exchange_array.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-34f568.o: in function `main':
+1804289383.ll:(.text+0x26): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/006_arr_defn3.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-788b68.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x4c): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xc6): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x131): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x183): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/007_arr_defn4.sy
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-8b5215.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x8e): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xb0): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x118): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x16d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/03_sort1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/00_bitset3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/fft0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/shuffle0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/02_mv3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/hoist-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/gameoflife-oscillator.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/instruction-combining-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/fft2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/sl3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/dead-code-elimination-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/sl2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/integer-divide-optimization-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/shuffle2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/stencil1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/04_spmv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/02_mv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/brainfuck-pi-nerf.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/transpose0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/integer-divide-optimization-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/conv0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/brainfuck-mandelbrot-nerf.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/00_bitset1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/gameoflife-gosper.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/median2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/median0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/fft1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/02_mv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/01_mm1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/integer-divide-optimization-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/dead-code-elimination-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/crypto-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/crypto-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/transpose1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/01_mm2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/instruction-combining-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/gameoflife-p61glidergun.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/04_spmv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/stencil0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/median1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/01_mm3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/floyd-0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/instruction-combining-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/crypto-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/04_spmv3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/floyd-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/03_sort3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/conv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/sl1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/brainfuck-bootstrap.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/shuffle1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/hoist-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/hoist-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/transpose2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/dead-code-elimination-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/03_sort2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/conv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/00_bitset2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2022-public/floyd-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/03_sort1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/00_bitset3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/fft0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/shuffle0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/02_mv3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/fft2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/shuffle2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/04_spmv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/02_mv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/transpose0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/conv0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/00_bitset1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/median2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/median0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/fft1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/02_mv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/01_mm1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/transpose1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/01_mm2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/04_spmv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/median1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/01_mm3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/04_spmv3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/03_sort3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/conv2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/shuffle1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/transpose2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/03_sort2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/conv1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-public/00_bitset2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/hoist-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/gameoflife-oscillator.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/instruction-combining-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/sl3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/dead-code-elimination-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/sl2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/integer-divide-optimization-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/stencil1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/brainfuck-pi-nerf.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/integer-divide-optimization-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/brainfuck-mandelbrot-nerf.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/gameoflife-gosper.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/integer-divide-optimization-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/dead-code-elimination-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/crypto-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/crypto-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/instruction-combining-3.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/gameoflife-p61glidergun.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/stencil0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/floyd-0.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/instruction-combining-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/crypto-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/floyd-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/sl1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/brainfuck-bootstrap.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/hoist-2.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/hoist-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/dead-code-elimination-1.sy
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/performance_test2021-private/floyd-1.sy

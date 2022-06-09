@@ -8,6 +8,14 @@ sysycc=build/src/sysycc
 tmp_dir=/tmp/test_ir
 mkdir -p $tmp_dir
 
+#将失败用例的记录存放起来 该测试脚本似乎还不完善
+save_dir=testlogs/test_ir
+mkdir -p $save_dir
+time=$(date "+%Y%m%d-%H%M%S")
+touch "${save_dir}/${time}.log"
+echo "the running time is ${time}" 
+
+
 for x in `find -L testcases/ | grep "\.sy$"`;
 do
     file=`basename $x`

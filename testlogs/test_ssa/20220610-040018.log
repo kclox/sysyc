@@ -1,0 +1,358 @@
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2020/02_arr_defn4.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-c0ecea.o: in function `main':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x83): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/084_expr_eval.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-5dc624.o: in function `eval':
+1804289383.ll:(.text+0x369): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x38b): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/105_long_array2.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-54934a.o: in function `main':
+1804289383.ll:(.text+0x77): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xdb): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/109_many_params2.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-015258.o: in function `main':
+1804289383.ll:(.text+0x16b): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x18d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/089_hidden_var.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-4d74d2.o: in function `main':
+1804289383.ll:(.text+0xb5): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x110): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/094_substr.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-55cbd9.o: in function `max_sum_nonadjacent':
+1804289383.ll:(.text+0x81): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-55cbd9.o: in function `longest_common_subseq':
+1804289383.ll:(.text+0x162): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-55cbd9.o: in function `main':
+1804289383.ll:(.text+0x2b4): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x357): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/081_exgcd.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-e21bb5.o: in function `main':
+1804289383.ll:(.text+0xe1): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x10b): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/097_var_name.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-4c46f4.o: in function `main':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/112_many_locals.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-20894f.o: in function `foo':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/h_functional/108_many_params.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-4ec9a8.o: in function `param16':
+1804289383.ll:(.text+0x81e): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-4ec9a8.o: in function `main':
+1804289383.ll:(.text+0xb4e): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/073_backpack.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-dbea8f.o: in function `main':
+1804289383.ll:(.text+0x2e1): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x333): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/078_big_int_mul.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-06192f.o: in function `main':
+1804289383.ll:(.text+0x29): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x12a): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x228): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/071_exchange_array.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-165667.o: in function `main':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/006_arr_defn3.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-66e050.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x4c): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xc6): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x131): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x183): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/2021_qual/functional/007_arr_defn4.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-b949cb.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x83): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xa5): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x110): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x165): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/96_matrix_add.sy --enable-all-opt
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/84_long_array2.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-31e2c9.o: in function `main':
+1804289383.ll:(.text+0x77): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xdb): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/99_matrix_tran.sy --enable-all-opt
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/98_matrix_mul.sy --enable-all-opt
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/05_arr_defn4.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-0d37d1.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x83): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xa5): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x110): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x165): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/87_many_params.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-8d8388.o: in function `param16':
+1804289383.ll:(.text+0x81e): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-8d8388.o: in function `main':
+1804289383.ll:(.text+0xb4e): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/88_many_params2.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-901c8a.o: in function `main':
+1804289383.ll:(.text+0x16b): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x18d): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/66_exgcd.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-4d35f1.o: in function `main':
+1804289383.ll:(.text+0xe1): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x10b): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/69_expr_eval.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-6b6490.o: in function `eval':
+1804289383.ll:(.text+0x369): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x38b): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/97_matrix_sub.sy --enable-all-opt
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/04_arr_defn3.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-4f41cf.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x4c): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xc6): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x131): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x183): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/63_big_int_mul.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-51f491.o: in function `main':
+1804289383.ll:(.text+0x29): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x12a): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x228): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/95_float.sy --enable-all-opt
+[yyerror] syntax error
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../lib32/crt1.o: in function `_start':
+(.text+0x2c): undefined reference to `main'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/54_hidden_var.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-13cacb.o: in function `main':
+1804289383.ll:(.text+0xb5): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x110): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/79_var_name.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-927728.o: in function `main':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/77_substr.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-aeaf6a.o: in function `max_sum_nonadjacent':
+1804289383.ll:(.text+0x81): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-aeaf6a.o: in function `longest_common_subseq':
+1804289383.ll:(.text+0x162): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: /tmp/1804289383-aeaf6a.o: in function `main':
+1804289383.ll:(.text+0x2b4): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x357): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2022/90_many_locals.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-d38876.o: in function `foo':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/073_backpack.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-44799c.o: in function `main':
+1804289383.ll:(.text+0x2e1): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x333): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/078_big_int_mul.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-03a0f9.o: in function `main':
+1804289383.ll:(.text+0x29): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x12a): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x228): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/071_exchange_array.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-3d7bf4.o: in function `main':
+1804289383.ll:(.text+0x21): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/006_arr_defn3.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-c3603b.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x4c): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xc6): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x131): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x183): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+fail: build/src/sysycc --clang -L libsysy -o /tmp/tmp.out testcases/official-testcases/function_test2021/007_arr_defn4.sy --enable-all-opt
+warning: overriding the module target triple with i386-pc-linux-gnu [-Woverride-module]
+1 warning generated.
+/usr/bin/ld: /tmp/1804289383-9d9a22.o: in function `main':
+1804289383.ll:(.text+0x27): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x83): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0xa5): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x110): undefined reference to `_sysy_set_i32_array'
+/usr/bin/ld: 1804289383.ll:(.text+0x165): undefined reference to `_sysy_set_i32_array'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+

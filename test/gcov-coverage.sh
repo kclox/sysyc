@@ -1,7 +1,7 @@
 
-src_dir="/home/lt/projects/SysYCompiler/src"
-build_dir="/home/lt/projects/SysYCompiler/build"
-project="/home/lt/projects/SysYCompiler"
+src_dir="/home/qihan/sysyc_Tsihan/src"
+build_dir="/home/qihan/sysyc_Tsihan/build"
+project="/home/qihan/sysyc_Tsihan"
 
 
 run_test() {
