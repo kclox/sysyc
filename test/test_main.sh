@@ -1,4 +1,4 @@
-
+#该测试脚本没有变动
 sysycc="build/src/sysycc"
 sy_file="testcases/ast_to_ir/in/005_while.sy"
 ir_file="testcases/ast_to_ir/out/005_while.ll"

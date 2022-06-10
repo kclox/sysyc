@@ -8,6 +8,13 @@ sysycc=build/src/sysycc
 tmp_dir=/tmp/test_ir
 mkdir -p $tmp_dir
 
+#将失败用例的记录存放起来
+save_dir=testlogs/test_all
+mkdir -p $save_dir
+time=$(date "+%Y%m%d-%H%M%S")
+touch "${save_dir}/${time}.log"
+echo "the running time is ${time}" 
+
 pass_count=0
 fail_count=0
 total=`find -L testcases/official-testcases/ | grep "\.sy$" | wc -l`
@@ -20,13 +27,15 @@ failed() {
     err=$1
     msg=$2
     notquit=$3
-    echo -e "fail: $err"
+    echo -e "fail: $err">>${save_dir}/${time}.log
     if [ ! -z "$msg" ]
     then
-        echo -e "$msg"
+        echo -e "$msg\n\n" >>${save_dir}/${time}.log
     fi
     fail_count=$(( $fail_count + 1 ))
     print_process
+    #尝试将失败的测试用例保存在文件中
+
     [ -z "$notquit" ] && exit 1
 }
 

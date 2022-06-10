@@ -7,3 +7,4 @@ a.out
 libsysy/libsysy.a
 *.o
 testcases/official-testcases
+testlogs

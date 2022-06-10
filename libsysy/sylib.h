@@ -6,7 +6,14 @@
 #include<sys/time.h>
 /* Input & output functions */
 int getint(),getch(),getarray(int a[]);
+float getfloat();
+int getfarray(float a[]);
+
 void putint(int a),putch(int a),putarray(int n,int a[]);
+void putfloat(float a);
+void putfarray(int n, float a[]);
+
+void putf(char a[], ...);
 
 /* Timing function implementation */
 struct timeval _sysy_start,_sysy_end;
@@ -20,8 +27,5 @@ __attribute((constructor)) void before_main();
 __attribute((destructor)) void after_main();
 void _sysy_starttime(int lineno);
 void _sysy_stoptime(int lineno);
-
-// ext
-void _sysy_set_i32_array(int val, int *array, int count);
 
 #endif
