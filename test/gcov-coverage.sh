@@ -1,7 +1,8 @@
 
-src_dir="/home/qihan/sysyc_Tsihan/src"
-build_dir="/home/qihan/sysyc_Tsihan/build"
-project="/home/qihan/sysyc_Tsihan"
+#修改成相对路径
+src_dir="./src"
+build_dir="./build"
+project=$(cd $(dirname $0); pwd)
 
 
 run_test() {
