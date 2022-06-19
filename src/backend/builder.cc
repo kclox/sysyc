@@ -3,15 +3,41 @@
 
 namespace backend {
 namespace builder {
-void Load(instr_list &insts, instr_iter it, Reg rd, Address addr,
-          bool eq_addr) {
-    auto ldr = std::make_unique<LDR>();
-    ldr->rd = rd;
-    ldr->addr = addr;
-    ldr->eq_addr = eq_addr;
-    insts.insert(it, std::move(ldr));
+
+Word legal(Word x) {
+    Word y;
+    for (int i = 0; i < 32; i = i + 2) {
+        y = (x >> (32 - i)) | (x << i);
+        if (y < 256)
+            return 1;
+    }
+    return 0;
 }
 
+Reg TestImm(instr_list &insts, instr_iter it, Word x) {
+    if (legal(x))
+        return Reg::INVALID;
+    Address *addr = new Address(std::to_string(x));
+    Load(insts, it, Reg::R8, *addr, true);
+    return Reg::R8;
+}
+
+void Load(instr_list &insts, instr_iter it, Reg rd, Address addr, bool eq_addr,
+          bool Literal_pools) {
+    auto ldr = std::make_unique<LDR>();
+    ldr->rd = rd;
+    Reg k = Reg::INVALID;
+    if ((addr.mode & addr.mode_m_mask) == 8) // Address::kMBaseImm
+        k = TestImm(insts, it, addr.offset.imm);
+    if (k != Reg::INVALID) {
+        addr.mode = Address::kMBaseReg;
+        addr.offset.reg = k;
+    }
+    ldr->addr = addr;
+    ldr->eq_addr = eq_addr;
+    ldr->Literal_pools = Literal_pools;
+    insts.insert(it, std::move(ldr));
+}
 void LAddr(instr_list &insts, instr_iter it, Reg rd, std::string label) {
     auto ldr = std::make_unique<LDR>();
     ldr->rd = rd;
@@ -23,6 +49,13 @@ void LAddr(instr_list &insts, instr_iter it, Reg rd, std::string label) {
 void Store(instr_list &insts, instr_iter it, Reg rd, Address addr) {
     auto str = std::make_unique<STR>();
     str->rd = rd;
+    Reg k = Reg::INVALID;
+    if ((addr.mode & addr.mode_m_mask) == 8) // Address::kMBaseImm
+        k = TestImm(insts, it, addr.offset.imm);
+    if (k != Reg::INVALID) {
+        addr.mode = Address::kMBaseReg;
+        addr.offset.reg = k;
+    }
     str->addr = addr;
     insts.insert(it, std::move(str));
 }
@@ -87,8 +120,15 @@ void BinaryAlu(instr_list &insts, instr_iter it, int op, Reg rd, Reg a,
     auto alu = std::make_unique<backend::BinaryAlu>(op);
     alu->rd = rd;
     alu->a = a;
-    alu->b.imm = b;
-    alu->flags |= alu->kFlagBIsImm;
+    Reg k = TestImm(insts, it, b);
+    if (k == Reg::INVALID) {
+        alu->b.imm = b;
+        alu->flags |= alu->kFlagBIsImm;
+    } else {
+
+        alu->b.r = k;
+        alu->flags |= alu->kFlagS;
+    }
     insts.insert(it, std::move(alu));
 }
 
@@ -139,7 +179,8 @@ Reg Op2Reg(Func &func, instr_list &insts, instr_iter it, Operand op, Reg rd) {
             return rd;
         } else { // 使用load获取立即数
             auto label = func.CreateIntImm(op.imm);
-            builder::Load(insts, it, rd, Address(label));
+            builder::Load(insts, it, rd, Address(label), true);
+            builder::Load(insts, it, rd, Address(rd));
             // Load(insts, it, rd, rd);
             return rd;
         }

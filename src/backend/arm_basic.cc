@@ -91,6 +91,10 @@ std::vector<Reg *> Address::RRegs() {
 
 std::string getvalString(std::shared_ptr<ir::InitVal> init) {
     std::string s = "";
+    if (!init) {
+        s = s + ".word 0";
+        return s;
+    }
     switch (init->kind) {
     case ir::InitVal::kZero: {
         auto p0 = std::dynamic_pointer_cast<ir::Zeroinitializer>(init);
@@ -118,7 +122,7 @@ std::string getvalString(std::shared_ptr<ir::InitVal> init) {
         if (p2->vals.size() > 0) {
             for (int i = 0; i < p2->vals.size(); i++) {
                 std::shared_ptr<ir::InitVal> k(p2->vals[i].get());
-                s += getvalString(k) + "\n";
+                s += getvalString(k);
                 if (i < p2->vals.size() - 1)
                     s = s + "\n";
             }
@@ -134,6 +138,20 @@ std::string Define::str() {
 
     std::string s = name + ":\n";
     s += getvalString(init);
+    return s;
+}
+
+int Literal_pools_num = 0;
+std::string LDR::str() const {
+    std::string s = "LDR ";
+    std::string addr_str = (eq_addr ? "=" : "") + addr.str();
+    s = s + Reg2Str(rd) + ", " + addr_str;
+    if (Literal_pools) {
+        s = s + "\n" + "B __Literal_pools__" +
+            std::to_string(Literal_pools_num) + "\n";
+        s = s + "\t .ltorg\n" + "__Literal_pools__" +
+            std::to_string(Literal_pools_num++) + ":";
+    }
     return s;
 }
 }; // namespace backend

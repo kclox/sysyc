@@ -82,7 +82,7 @@ int InstrSelectHelper ::IrAluOpToAsmOp(int op) {
 Reg InstrSelectHelper ::GetGlobalAdrr(std::shared_ptr<ir::Value> g) {
     auto var = std::dynamic_pointer_cast<ir::GlobalVar>(g);
     Reg rd = GetVReg();
-    builder::Load(BACK(bb->insts), rd, Address(var->name), true);
+    builder::Load(BACK(bb->insts), rd, Address(var->name), true, true);
     return rd;
 }
 
@@ -93,11 +93,8 @@ Reg InstrSelectHelper ::LoadGlobal(Reg rt, std::shared_ptr<ir::Value> g) {
 }
 
 void InstrSelectHelper ::StoreGlobal(std::shared_ptr<ir::Value> g,
-                                     Reg rd) { //******
-    auto var = std::dynamic_pointer_cast<ir::GlobalVar>(g);
-    Reg rtemp = GetVReg();
-    builder::Load(BACK(bb->insts), rtemp, Address(var->name),
-                  true);                                 // LDR rtemp =name
+                                     Reg rd) {           //******
+    Reg rtemp = GetGlobalAdrr(g);                        // LDR rtemp =name
     builder::Store(BACK(bb->insts), rd, Address(rtemp)); // STR rd [rtemp]
 }
 
@@ -125,11 +122,12 @@ builder::adv::Operand InstrSelectHelper ::GetOperand(Word imm) {
 void InstrSelectHelper ::ConvertBinaryAlu(ir::BinaryAlu *alu) {
     auto r = GetOperand(alu->result), a = GetOperand(alu->l),
          b = GetOperand(alu->r);
+    auto k = GetOperand(GetVReg());
     if (alu->op == ir::Instr::kOpSrem) {
         // l % r == l - l / r
         builder::adv::BinaryAlu(*func, BACK(bb->insts), Instr::kSDIV, r, a, b);
-        builder::adv::BinaryAlu(*func, BACK(bb->insts), Instr::kMUL, r, r, b);
-        builder::adv::BinaryAlu(*func, BACK(bb->insts), Instr::kSUB, r, a, r);
+        builder::adv::BinaryAlu(*func, BACK(bb->insts), Instr::kMUL, k, r, b);
+        builder::adv::BinaryAlu(*func, BACK(bb->insts), Instr::kSUB, r, a, k);
     } else {
         builder::adv::BinaryAlu(*func, BACK(bb->insts), IrAluOpToAsmOp(alu->op),
                                 r, a, b);
@@ -193,7 +191,13 @@ void InstrSelectHelper ::ConvertOtherInst(ir::Instr *inst) {
     } break;
     case ir::Instr::kOpZext:
     case ir::Instr::kOpBitcast: {
-        v_to_vreg[inst->Result().get()] = GetVReg((*inst->RValues().front()));
+        Reg vr;
+        std::shared_ptr<ir::Value> v = (*inst->RValues().front());
+        if (v->kind == ir::Value::kGlobalVar)
+            vr = GetGlobalAdrr(v);
+        else
+            vr = GetVReg(v);
+        v_to_vreg[inst->Result().get()] = vr;
     } break;
     }
 }

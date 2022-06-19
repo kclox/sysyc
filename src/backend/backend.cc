@@ -19,8 +19,8 @@ void Asm::dump(std::ostream &os) {
     os << ".text\n"
           ".global\tmain\n" // main
           ".syntax unified\n"
-          ".code\t16\n"
-          ".thumb_func\n"
+          ".code\t32\n"
+          //".thumb_func\n"
           ".fpu softvfp\n"
           ".type\tmain, %function\n"; // main
     for (auto &f : funcs) {
