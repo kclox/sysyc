@@ -489,6 +489,8 @@ void RegAllocaHelper::Alloca() {
                 }
             // reserve enough free registers for stack slot reference
             int spill_count = active.size() + stack_slot_refc - phy_reg_count;
+            if (inst->op == Instr::kSTR)
+                spill_count++;
             while (spill_count-- > 0) {
                 auto to_spill = PopLastLongestActive();
                 Spill(to_spill);
@@ -547,18 +549,46 @@ bool RegAllocaHelper::GetBackupRegs(std::vector<Reg> &regs, Reg ret,
     return regs.size() > 0;
 }
 
+Word legal(Word x) {
+    Word y;
+    for (int i = 0; i < 32; i = i + 2) {
+        y = (x >> (32 - i)) | (x << i);
+        if (y < 256)
+            return 1;
+    }
+    return 0;
+}
+
 void RegAllocaHelper::ReWrite() { // 初始化栈帧，采用满递减堆栈
+    int x;
     // push r0-r7, lr
     int reg_arg_count = std::min((int)func.args.size(), max_reg_arg_count);
     int rx = std::max((int)func.has_ret, reg_arg_count);
     func.frame.saved_reg_count = 7 - rx + 2;
     builder::Push(BACK(func.entry.insts), Reg::R0, Reg::R7, Reg::LR);
     // sub sp, sp, x
-    builder::BinaryAlu(BACK(func.entry.insts), Instr::kSUB, Reg::SP, Reg::SP,
-                       func.frame.AllocaSize());
+    x = func.frame.AllocaSize();
+    if (legal(x))
+        builder::BinaryAlu(BACK(func.entry.insts), Instr::kSUB, Reg::SP,
+                           Reg::SP, x);
+    else {
+        Address *imm = new Address(std::to_string(x));
+        builder::Load(BACK(func.entry.insts), Reg::R7, *imm, true);
+        builder::BinaryAlu(BACK(func.entry.insts), Instr::kSUB, Reg::SP,
+                           Reg::SP, Reg::R7);
+    }
+
     // add r7, sp, x
-    builder::BinaryAlu(BACK(func.entry.insts), Instr::kADD, Reg::R7, Reg::SP,
-                       func.frame.LocalVarBaseOffset());
+    x = func.frame.LocalVarBaseOffset();
+    if (legal(x))
+        builder::BinaryAlu(BACK(func.entry.insts), Instr::kADD, Reg::R7,
+                           Reg::SP, x);
+    else {
+        Address *imm = new Address(std::to_string(x));
+        builder::Load(BACK(func.entry.insts), Reg::R7, *imm, true);
+        builder::BinaryAlu(BACK(func.entry.insts), Instr::kADD, Reg::R7,
+                           Reg::SP, Reg::R7);
+    }
 
     // move arg to allocated
     for (int i = 0; i < reg_arg_count; i++) {
@@ -701,7 +731,7 @@ void RegAllocaHelper::ReWrite() { // 初始化栈帧，采用满递减堆栈
                     WRegs.clear();
                 }
 
-                for (auto r : RRegs) {
+                for (auto &r : RRegs) {
                     if (*r < Reg::VREG)
                         continue;
                     *r = refer_vreg(*r);
@@ -720,9 +750,16 @@ void RegAllocaHelper::ReWrite() { // 初始化栈帧，采用满递减堆栈
     }
 
     // add sp, sp, x
-    builder::BinaryAlu(BACK(func.end.insts), Instr::kADD, Reg::SP, Reg::SP,
-                       func.frame.AllocaSize() +
-                           (9 - func.frame.saved_reg_count) * 4);
+    x = func.frame.AllocaSize() + (9 - func.frame.saved_reg_count) * 4;
+    if (legal(x))
+        builder::BinaryAlu(BACK(func.end.insts), Instr::kADD, Reg::SP, Reg::SP,
+                           x);
+    else {
+        Address *imm = new Address(std::to_string(x));
+        builder::Load(BACK(func.end.insts), Reg::R7, *imm, true);
+        builder::BinaryAlu(BACK(func.end.insts), Instr::kADD, Reg::SP, Reg::SP,
+                           Reg::R7);
+    }
     // pop rx-r7, pc
     builder::Pop(BACK(func.end.insts), (Reg)rx, Reg::R7, Reg::PC);
 }
