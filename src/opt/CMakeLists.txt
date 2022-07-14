@@ -6,6 +6,7 @@ add_library(opt
   build_dtree.cc
   mem2reg.cc
   init_bb_ptr.cc
+  gvn.cc
 )
 
 

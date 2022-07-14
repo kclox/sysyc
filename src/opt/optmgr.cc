@@ -14,12 +14,17 @@ OptModule modules[] = {
     OptModule{"build-dtree", BuildDTree, {InitBBPtr}},
     OptModule{"mem2reg", Mem2Reg, {BuildDTree}},
     OptModule{"constant-opt", ConstantOpt, {}},
+    //增加全局值编号
+    OptModule{"gvn",gvn,{BuildDTree}},
+
 };
 const int module_count = sizeof(modules) / sizeof(OptModule);
 
 std::vector<std::string> levels[] = {
     {},
     {"mem2reg", "constant-opt"},
+    //增加全局值编号
+    {"gvn"},
 };
 const int level_count =
     sizeof(levels) / sizeof(std::vector<std::string>);

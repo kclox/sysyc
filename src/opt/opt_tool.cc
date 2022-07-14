@@ -16,6 +16,8 @@ int main(int argc, char **argv) {
     opt::BuildDTree(m);
     opt::Mem2Reg(m);
     opt::ConstantOpt(m);
+    //增加全局值编号
+    opt::gvn(m);
     m.dump(std::cout);
     return 0;
 }

@@ -24,6 +24,8 @@ std::string TypedValues(std::shared_ptr<Type> ty,
 
 struct Instr {
     int op;
+    //增加定位基本块
+    BB *parent;
     enum {
         kOpCall = 1,
         kOpRet,
@@ -47,7 +49,11 @@ struct Instr {
 
     Instr() {}
     Instr(int op) : op(op) {}
-
+    //张启涵：根据基本块创建指令，主要用于定位基本块
+    Instr(BB *parent):parent(parent){};
+    inline const BB *get_parent() const { return parent; }
+    inline BB *get_parent() { return parent; }
+    ////////////////////////////////////
     bool IsBinaryAlu() const { return op >= kOpAdd && op <= kOpOr; }
     virtual bool HasResult() const = 0;
     virtual std::shared_ptr<Value> Result() = 0;
@@ -665,6 +671,8 @@ struct BB {
     // instructions
     std::vector<std::unique_ptr<Instr>> insts;
     std::set<BB *> successors;
+
+
     std::vector<BB *> predecessors;
     std::shared_ptr<LocalValue> label;
     Func *func;
@@ -681,6 +689,8 @@ struct BB {
         insts.push_back(std::move(inst));
         return p;
     }
+            
+    
 
     virtual void dump(std::ostream &os);
 
@@ -697,6 +707,11 @@ struct Func {
     std::vector<std::shared_ptr<LocalValue>> args;
     // basic blocks
     std::vector<std::unique_ptr<BB>> bblocks;
+
+    //张启涵：额外添加map数据结构
+    std::map<BB *, std::set<BB *>> _successorMap;
+
+
     // variables
     // used to find var
     std::map<std::string, std::shared_ptr<LocalVar>> vars;
@@ -731,6 +746,16 @@ struct Func {
         int id = 0;
         for (auto &bb : bblocks)
             bb->id = id++;
+    }
+    //张启涵：增加getDomTreeSuccessorBlocks函数
+    std::set<BB *> getDomTreeSuccessorBlocks(BB *bb) { return _successorMap[bb]; }
+
+    //张启涵：增加isDominatedBy函数，用于检查前者是否被后者支配
+        bool isDominatedBy(BB *child, BB *parent) {
+        if (child == parent) return true;
+        //还需要额外增加函数
+        auto sets = getDomTreeSuccessorBlocks(parent);
+        return sets.find(child) != sets.end();
     }
 
     // call it whenever you want to refresh tmp var id

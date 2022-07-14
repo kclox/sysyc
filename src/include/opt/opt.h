@@ -23,6 +23,8 @@ void ConstantOpt(ir::Module &m);
 void InitBBPtr(ir::Module &m);
 void BuildDTree(ir::Module &m);
 void Mem2Reg(ir::Module &m);
+//增加全局值编号
+void gvn(ir::Module &m);
 
 namespace mgr {
 typedef void (*OptModuleEntry)(ir::Module &);
