@@ -55,6 +55,12 @@ struct Instr {
     inline BB *get_parent() { return parent; }
     ////////////////////////////////////
     bool IsBinaryAlu() const { return op >= kOpAdd && op <= kOpOr; }
+    //张启涵:增加判断是否为加、减、乘、除
+    bool is_add() const { return op == kOpAdd; }
+    bool is_sub() const { return op == kOpSub; }
+    bool is_mul() const { return op == kOpMul; }
+    bool is_div() const { return op == kOpSdiv; }
+    ///////////////////////////////////
     virtual bool HasResult() const = 0;
     virtual std::shared_ptr<Value> Result() = 0;
     virtual int ReplaceValue(std::shared_ptr<Value> old,
@@ -677,6 +683,8 @@ struct BB {
     std::shared_ptr<LocalValue> label;
     Func *func;
     int id;
+    //增加判断基本块中的指令是否为空
+    bool empty() { return insts.empty(); }
 
     struct BBExtraInfo {
         template <typename T> T *cast() { return static_cast<T *>(this); }
@@ -689,6 +697,10 @@ struct BB {
         insts.push_back(std::move(inst));
         return p;
     }
+
+
+
+
             
     
 
@@ -786,6 +798,9 @@ struct Func {
     }
 
     std::shared_ptr<Value> FindVar(std::string var, bool only_in_func = false);
+
+    //增加判断是否为declaration
+    bool is_declaration() { return bblocks.empty(); }
 
     virtual void dump(std::ostream &os);
 };

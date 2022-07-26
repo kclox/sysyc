@@ -16,12 +16,16 @@ OptModule modules[] = {
     OptModule{"constant-opt", ConstantOpt, {}},
     //增加全局值编号
     OptModule{"gvn",gvn,{BuildDTree}},
+    //增加零一消除
+    OptModule{"zero_one_elimination",Zero_One_Elimination,{BuildDTree}},
 
 };
 const int module_count = sizeof(modules) / sizeof(OptModule);
 
 std::vector<std::string> levels[] = {
     {},
+    //增加01消除
+    {"zero_one_elimination"},
     {"mem2reg", "constant-opt"},
     //增加全局值编号
     {"gvn"},

@@ -18,6 +18,8 @@ int main(int argc, char **argv) {
     opt::ConstantOpt(m);
     //增加全局值编号
     opt::gvn(m);
+    //增加零一消除
+    opt::Zero_One_Elimination(m);
     m.dump(std::cout);
     return 0;
 }

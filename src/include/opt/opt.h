@@ -25,6 +25,8 @@ void BuildDTree(ir::Module &m);
 void Mem2Reg(ir::Module &m);
 //增加全局值编号
 void gvn(ir::Module &m);
+//增加零一消除
+void Zero_One_Elimination(ir::Module &m);
 
 namespace mgr {
 typedef void (*OptModuleEntry)(ir::Module &);

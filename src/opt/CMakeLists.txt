@@ -7,6 +7,7 @@ add_library(opt
   mem2reg.cc
   init_bb_ptr.cc
   gvn.cc
+  zero_one_elimination.cc
 )
 
 
