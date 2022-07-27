@@ -8,6 +8,7 @@ add_library(opt
   init_bb_ptr.cc
   gvn.cc
   zero_one_elimination.cc
+  active_variable_analysis.cc
 )
 
 

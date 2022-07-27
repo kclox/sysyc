@@ -27,6 +27,8 @@ void Mem2Reg(ir::Module &m);
 void gvn(ir::Module &m);
 //增加零一消除
 void Zero_One_Elimination(ir::Module &m);
+//增加活跃变量分析
+void Active_Variable_Analysis(ir::Module &m);
 
 namespace mgr {
 typedef void (*OptModuleEntry)(ir::Module &);

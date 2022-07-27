@@ -9,6 +9,7 @@
 #include <map>
 #include <memory>
 #include <set>
+#include <unordered_set>
 #include <string>
 #include <vector>
 
@@ -21,6 +22,9 @@ typedef std::shared_ptr<Value> *PGVT;
 
 std::string TypedValues(std::shared_ptr<Type> ty,
                         std::vector<std::shared_ptr<Value>> vals);
+
+
+
 
 struct Instr {
     int op;
@@ -55,11 +59,20 @@ struct Instr {
     inline BB *get_parent() { return parent; }
     ////////////////////////////////////
     bool IsBinaryAlu() const { return op >= kOpAdd && op <= kOpOr; }
-    //张启涵:增加判断是否为加、减、乘、除
+    //张启涵:增加判断是否为相应的指令
     bool is_add() const { return op == kOpAdd; }
     bool is_sub() const { return op == kOpSub; }
     bool is_mul() const { return op == kOpMul; }
     bool is_div() const { return op == kOpSdiv; }
+    bool is_rem() const { return op == kOpSrem; }
+    bool is_ret() const { return op == kOpRet; }
+    bool is_cmp() const { return op == kOpIcmp; }
+    bool is_zext() const { return op == kOpZext; }
+    bool is_call() const { return op == kOpCall; }
+    bool is_phi() const { return op == kOpPhi; }
+    bool is_load() const { return op == kOpLoad; }
+    bool is_gep() const { return op == kOpGetelementptr; }
+    bool is_alloca() const { return op == kOpAlloca;}
     ///////////////////////////////////
     virtual bool HasResult() const = 0;
     virtual std::shared_ptr<Value> Result() = 0;
@@ -806,6 +819,14 @@ struct Func {
 };
 
 struct Module {
+
+    //张启涵：由于增加活跃变量算法，增加如下的数据结构
+
+    std::map<BB*,std::unordered_set<Value*> > active, live_in, live_out;
+    std::map<BB*,std::unordered_set<Value*> > use, def, phi_op;
+    std::map<BB*,std::set<std::pair<BB *,Value  *>>> phi_op_pair;
+
+
     struct {
         std::map<std::string, FuncDecl *> func_decls;
         std::map<std::string, Func *> funcs;

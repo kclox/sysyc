@@ -20,6 +20,8 @@ int main(int argc, char **argv) {
     opt::gvn(m);
     //增加零一消除
     opt::Zero_One_Elimination(m);
+    //增加活跃变量分析
+    opt::Active_Variable_Analysis(m),
     m.dump(std::cout);
     return 0;
 }

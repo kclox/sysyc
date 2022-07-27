@@ -18,6 +18,8 @@ OptModule modules[] = {
     OptModule{"gvn",gvn,{BuildDTree}},
     //增加零一消除
     OptModule{"zero_one_elimination",Zero_One_Elimination,{BuildDTree}},
+    //增加活跃变量分析
+    OptModule{"active_variable_analysis",Active_Variable_Analysis,{}},
 
 };
 const int module_count = sizeof(modules) / sizeof(OptModule);
@@ -26,6 +28,8 @@ std::vector<std::string> levels[] = {
     {},
     //增加01消除
     {"zero_one_elimination"},
+    //增加活跃变量分析
+    {"active_variable_analysis"},
     {"mem2reg", "constant-opt"},
     //增加全局值编号
     {"gvn"},
