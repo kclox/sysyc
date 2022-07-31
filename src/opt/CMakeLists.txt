@@ -6,6 +6,10 @@ add_library(opt
   build_dtree.cc
   mem2reg.cc
   init_bb_ptr.cc
+  gvn.cc
+  zero_one_elimination.cc
+  active_variable_analysis.cc
+  dead_code_elimination.cc
 )
 
 

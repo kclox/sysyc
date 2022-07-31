@@ -14,12 +14,28 @@ OptModule modules[] = {
     OptModule{"build-dtree", BuildDTree, {InitBBPtr}},
     OptModule{"mem2reg", Mem2Reg, {BuildDTree}},
     OptModule{"constant-opt", ConstantOpt, {}},
+    //增加全局值编号
+    OptModule{"gvn",gvn,{BuildDTree}},
+    //增加零一消除
+    OptModule{"zero_one_elimination",Zero_One_Elimination,{BuildDTree}},
+    //增加活跃变量分析
+    OptModule{"active_variable_analysis",Active_Variable_Analysis,{}},
+    //在活跃变量分析的基础上增加死代码删除
+    OptModule{"dead_code_elimination",Dead_Code_Elimination,{Active_Variable_Analysis}},
+
+
 };
 const int module_count = sizeof(modules) / sizeof(OptModule);
 
 std::vector<std::string> levels[] = {
     {},
+    //增加01消除
+    {"zero_one_elimination"},
+    //增加活跃变量分析
+    {"active_variable_analysis"},
     {"mem2reg", "constant-opt"},
+    //增加全局值编号
+    {"gvn"},
 };
 const int level_count =
     sizeof(levels) / sizeof(std::vector<std::string>);

@@ -9,6 +9,7 @@
 #include <map>
 #include <memory>
 #include <set>
+#include <unordered_set>
 #include <string>
 #include <vector>
 
@@ -22,8 +23,13 @@ typedef std::shared_ptr<Value> *PGVT;
 std::string TypedValues(std::shared_ptr<Type> ty,
                         std::vector<std::shared_ptr<Value>> vals);
 
+
+
+
 struct Instr {
     int op;
+    //增加定位基本块
+    BB *parent;
     enum {
         kOpCall = 1,
         kOpRet,
@@ -47,8 +53,30 @@ struct Instr {
 
     Instr() {}
     Instr(int op) : op(op) {}
-
+    //张启涵：根据基本块创建指令，主要用于定位基本块
+    Instr(BB *parent):parent(parent){};
+    inline const BB *get_parent() const { return parent; }
+    inline BB *get_parent() { return parent; }
+    ////////////////////////////////////
     bool IsBinaryAlu() const { return op >= kOpAdd && op <= kOpOr; }
+    //张启涵:增加判断是否为相应的指令
+    bool is_add() const { return op == kOpAdd; }
+    bool is_sub() const { return op == kOpSub; }
+    bool is_mul() const { return op == kOpMul; }
+    bool is_div() const { return op == kOpSdiv; }
+    bool is_rem() const { return op == kOpSrem; }
+    bool is_ret() const { return op == kOpRet; }
+    bool is_cmp() const { return op == kOpIcmp; }
+    bool is_zext() const { return op == kOpZext; }
+    bool is_call() const { return op == kOpCall; }
+    bool is_phi() const { return op == kOpPhi; }
+    bool is_load() const { return op == kOpLoad; }
+    bool is_gep() const { return op == kOpGetelementptr; }
+    bool is_alloca() const { return op == kOpAlloca;}
+    bool is_store() const { return op == kOpStore;}
+    bool is_br() const { return op == kOpBr;}
+    
+    ///////////////////////////////////
     virtual bool HasResult() const = 0;
     virtual std::shared_ptr<Value> Result() = 0;
     virtual int ReplaceValue(std::shared_ptr<Value> old,
@@ -665,10 +693,14 @@ struct BB {
     // instructions
     std::vector<std::unique_ptr<Instr>> insts;
     std::set<BB *> successors;
+
+
     std::vector<BB *> predecessors;
     std::shared_ptr<LocalValue> label;
     Func *func;
     int id;
+    //增加判断基本块中的指令是否为空
+    bool empty() { return insts.empty(); }
 
     struct BBExtraInfo {
         template <typename T> T *cast() { return static_cast<T *>(this); }
@@ -681,6 +713,12 @@ struct BB {
         insts.push_back(std::move(inst));
         return p;
     }
+
+
+
+
+            
+    
 
     virtual void dump(std::ostream &os);
 
@@ -697,6 +735,11 @@ struct Func {
     std::vector<std::shared_ptr<LocalValue>> args;
     // basic blocks
     std::vector<std::unique_ptr<BB>> bblocks;
+
+    //张启涵：额外添加map数据结构
+    std::map<BB *, std::set<BB *>> _successorMap;
+
+
     // variables
     // used to find var
     std::map<std::string, std::shared_ptr<LocalVar>> vars;
@@ -732,6 +775,16 @@ struct Func {
         for (auto &bb : bblocks)
             bb->id = id++;
     }
+    //张启涵：增加getDomTreeSuccessorBlocks函数
+    std::set<BB *> getDomTreeSuccessorBlocks(BB *bb) { return _successorMap[bb]; }
+
+    //张启涵：增加isDominatedBy函数，用于检查前者是否被后者支配
+        bool isDominatedBy(BB *child, BB *parent) {
+        if (child == parent) return true;
+        //还需要额外增加函数
+        auto sets = getDomTreeSuccessorBlocks(parent);
+        return sets.find(child) != sets.end();
+    }
 
     // call it whenever you want to refresh tmp var id
     void ResetTmpVar() {
@@ -762,10 +815,66 @@ struct Func {
 
     std::shared_ptr<Value> FindVar(std::string var, bool only_in_func = false);
 
+    //增加判断是否为declaration
+    bool is_declaration() { return bblocks.empty(); }
+
     virtual void dump(std::ostream &os);
 };
 
 struct Module {
+
+    //张启涵：由于增加活跃变量算法，增加如下的数据结构
+
+    std::map<BB*,std::unordered_set<Value*> > active, live_in, live_out;
+    std::map<BB*,std::unordered_set<Value*> > use, def, phi_op;
+    std::map<BB*,std::set<std::pair<BB *,Value  *>>> phi_op_pair;
+    //判断指令在出口处是否是活跃的
+    bool isLiveOut(Instr *i) {
+    auto m = live_out[i->get_parent()];
+    //这里存疑，是否需要进行这么多的类型转化
+    if (i->is_add() || i->is_sub() || i->is_mul() || i->is_div() || i->is_rem()){
+        auto BinaryAlu_instr = dynamic_cast<ir::BinaryAlu *>(i);
+        return m.find(&*BinaryAlu_instr->Result()) != m.end();
+    }
+    else if(i->is_ret()){
+        auto Return_instr = dynamic_cast<ir::Ret *>(i);
+        return m.find(&*Return_instr->Result()) != m.end();
+    }
+    else if(i->is_cmp()){
+        auto Compare_instr = dynamic_cast<ir::Icmp *>(i);
+        return m.find(&*Compare_instr->Result()) != m.end();
+    }
+    else if(i->is_zext()){
+        auto Zest_instr = dynamic_cast<ir::Zext *>(i);
+        return m.find(&*Zest_instr->Result()) != m.end();
+    }
+    else if(i->is_call()){
+        auto Call_instr = dynamic_cast<ir::Call *>(i);
+        return m.find(&*Call_instr->Result()) != m.end();
+    }
+    else if(i->is_phi()){
+        auto Phi_instr = dynamic_cast<ir::Phi *>(i);
+        return m.find(&*Phi_instr->Result()) != m.end();
+    }
+    else if(i->is_load()){
+        auto Load_instr = dynamic_cast<ir::Load *>(i);
+        return m.find(&*Load_instr->Result()) != m.end();
+    }
+    else if(i->is_gep()){
+        auto Gep_instr = dynamic_cast<ir::Getelementptr *>(i);
+        return m.find(&*Gep_instr->Result()) != m.end();
+    }
+    else if(i->is_alloca()){
+        auto Alloca_instr = dynamic_cast<ir::Alloca *>(i);
+        return m.find(&*Alloca_instr->Result()) != m.end();
+
+    }
+    //无法处理的不进行死代码删除
+    return true;
+    }
+ 
+
+
     struct {
         std::map<std::string, FuncDecl *> func_decls;
         std::map<std::string, Func *> funcs;
