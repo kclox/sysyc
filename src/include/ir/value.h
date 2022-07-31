@@ -6,17 +6,25 @@
 #include <string>
 #include <vector>
 
+
 namespace ir {
 
+
+
 struct Value {
+    
     int kind;
     enum { kImm, kLocalVar, kTmpVar, kGlobalVar };
     std::shared_ptr<Type> ty;
+
+    
     Value() {}
     Value(int kind) : kind(kind) {}
     Value(std::shared_ptr<Type> ty, int kind) : ty(ty), kind(kind) {}
     virtual std::string str() = 0;
     virtual std::string typed_str() { return ty->str() + " " + str(); }
+    
+    
 };
 
 struct ImmValue : public Value {

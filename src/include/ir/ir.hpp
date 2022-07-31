@@ -73,6 +73,9 @@ struct Instr {
     bool is_load() const { return op == kOpLoad; }
     bool is_gep() const { return op == kOpGetelementptr; }
     bool is_alloca() const { return op == kOpAlloca;}
+    bool is_store() const { return op == kOpStore;}
+    bool is_br() const { return op == kOpBr;}
+    
     ///////////////////////////////////
     virtual bool HasResult() const = 0;
     virtual std::shared_ptr<Value> Result() = 0;
@@ -825,6 +828,51 @@ struct Module {
     std::map<BB*,std::unordered_set<Value*> > active, live_in, live_out;
     std::map<BB*,std::unordered_set<Value*> > use, def, phi_op;
     std::map<BB*,std::set<std::pair<BB *,Value  *>>> phi_op_pair;
+    //判断指令在出口处是否是活跃的
+    bool isLiveOut(Instr *i) {
+    auto m = live_out[i->get_parent()];
+    //这里存疑，是否需要进行这么多的类型转化
+    if (i->is_add() || i->is_sub() || i->is_mul() || i->is_div() || i->is_rem()){
+        auto BinaryAlu_instr = dynamic_cast<ir::BinaryAlu *>(i);
+        return m.find(&*BinaryAlu_instr->Result()) != m.end();
+    }
+    else if(i->is_ret()){
+        auto Return_instr = dynamic_cast<ir::Ret *>(i);
+        return m.find(&*Return_instr->Result()) != m.end();
+    }
+    else if(i->is_cmp()){
+        auto Compare_instr = dynamic_cast<ir::Icmp *>(i);
+        return m.find(&*Compare_instr->Result()) != m.end();
+    }
+    else if(i->is_zext()){
+        auto Zest_instr = dynamic_cast<ir::Zext *>(i);
+        return m.find(&*Zest_instr->Result()) != m.end();
+    }
+    else if(i->is_call()){
+        auto Call_instr = dynamic_cast<ir::Call *>(i);
+        return m.find(&*Call_instr->Result()) != m.end();
+    }
+    else if(i->is_phi()){
+        auto Phi_instr = dynamic_cast<ir::Phi *>(i);
+        return m.find(&*Phi_instr->Result()) != m.end();
+    }
+    else if(i->is_load()){
+        auto Load_instr = dynamic_cast<ir::Load *>(i);
+        return m.find(&*Load_instr->Result()) != m.end();
+    }
+    else if(i->is_gep()){
+        auto Gep_instr = dynamic_cast<ir::Getelementptr *>(i);
+        return m.find(&*Gep_instr->Result()) != m.end();
+    }
+    else if(i->is_alloca()){
+        auto Alloca_instr = dynamic_cast<ir::Alloca *>(i);
+        return m.find(&*Alloca_instr->Result()) != m.end();
+
+    }
+    //无法处理的不进行死代码删除
+    return true;
+    }
+ 
 
 
     struct {

@@ -21,7 +21,9 @@ int main(int argc, char **argv) {
     //增加零一消除
     opt::Zero_One_Elimination(m);
     //增加活跃变量分析
-    opt::Active_Variable_Analysis(m),
+    opt::Active_Variable_Analysis(m);
+    //在活跃变量分析的基础上进行死代码删除
+    opt::Dead_Code_Elimination(m);
     m.dump(std::cout);
     return 0;
 }

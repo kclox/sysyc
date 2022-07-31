@@ -206,12 +206,15 @@ void Active_Variable_Analysis(ir::Module &m, std::unique_ptr<ir::Func> &func) {
     }
 }
 
+
+
 } // namespace active_variable_analysis
 
 void Active_Variable_Analysis(ir::Module &m) {
     for (auto &func : m.funcs) {
         active_variable_analysis::Active_Variable_Analysis(m, func);
     }
+    
 }
 
 } // namespace opt

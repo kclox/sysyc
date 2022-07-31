@@ -20,6 +20,9 @@ OptModule modules[] = {
     OptModule{"zero_one_elimination",Zero_One_Elimination,{BuildDTree}},
     //增加活跃变量分析
     OptModule{"active_variable_analysis",Active_Variable_Analysis,{}},
+    //在活跃变量分析的基础上增加死代码删除
+    OptModule{"dead_code_elimination",Dead_Code_Elimination,{Active_Variable_Analysis}},
+
 
 };
 const int module_count = sizeof(modules) / sizeof(OptModule);

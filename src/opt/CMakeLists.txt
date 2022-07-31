@@ -9,6 +9,7 @@ add_library(opt
   gvn.cc
   zero_one_elimination.cc
   active_variable_analysis.cc
+  dead_code_elimination.cc
 )
 
 
